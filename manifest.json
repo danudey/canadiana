@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Canadiana",
+    "version": "1.0",
+  
+    "description": "Redirects American websites to the equivalent Canadian website.",
+  
+    "icons": {
+      "48": "icons/canada-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["https://beta.music.apple.com/*"],
+        "js": ["src/apple-music.js"]
+      }
+    ]
+  }
